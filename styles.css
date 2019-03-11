@@ -86,7 +86,10 @@ article{
 
 }
 
-@media screen and (min-width:480px) and (max-width:800px){
+@media screen and (min-width:320px) and (max-width:800px){
+	body{
+		min-width: 320px;
+	}
 	.way p{
 		font-size: 2vh;
 	}
