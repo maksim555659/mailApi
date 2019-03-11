@@ -86,9 +86,9 @@ article{
 
 }
 
-@media screen and (max-width:800px){
+@media only screen and (max-device-width: 480px){
 	body{
-		min-width: 320px;
+		min-width: 480px;
 	}
 	.way p{
 		font-size: 2vh;
