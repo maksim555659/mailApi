@@ -3,7 +3,6 @@ html{
 }
 body{
 		margin:0;
-		min-width: 750px;
 }
 header{
 		position: relative;
@@ -36,8 +35,7 @@ article{
 .way img{
 	width: 50vw;
 	border-radius: 0 20px 20px 0;
-		height: 60%;
-		flex:1 1 60%;
+		flex:1 1 50%;
 }
 .way p{
 	margin:auto;
@@ -87,9 +85,6 @@ article{
 }
 
 @media only screen and (max-device-width: 480px){
-	body{
-		min-width: 480px;
-	}
 	.way p{
 		font-size: 2vh;
 	}
@@ -103,5 +98,10 @@ article{
 	border-radius: 20px;
 	margin:0 0 10px 0;
 
+}
+.way img{
+	width: 40vw;
+	border-radius: 0 20px 20px 0;
+		flex:1 1 40%;
 }
 }
