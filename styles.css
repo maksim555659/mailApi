@@ -94,6 +94,7 @@ article{
 		color: blue;
 	}
 	article{
+	padding-left: 0;
 	display: flex;
 	box-shadow: 0 0 5px;
 	border-radius: 20px;
