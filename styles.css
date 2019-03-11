@@ -34,6 +34,7 @@ article{
 }
 .way img{
 	width: 50vw;
+		height: 50%;
 	border-radius: 0 20px 20px 0;
 		flex:1 1 50%;
 }
@@ -101,6 +102,7 @@ article{
 }
 .way img{
 	width: 40vw;
+	height: 40%;
 	border-radius: 0 20px 20px 0;
 		flex:1 1 40%;
 }
