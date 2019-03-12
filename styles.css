@@ -89,18 +89,50 @@ article{
 	.way p{
 		font-size: 2vh;
 	}
+a{
+	float: right;
+}
 	.way article{
-	padding-left: 0;
+	padding-left: 10px;
 	display: flex;
 	box-shadow: 0 0 5px;
 	border-radius: 20px;
 	margin:0 0 10px 0;
 
 }
+header{
+		 padding: 25px;
+}
+.navigation{
+	margin:auto;
+	flex: 1 1 100%;
+ 	display:flex;
+	 font-size: 64px;
+	 flex-direction: row;
+
+
+}
+
+.way .big-text{
+	font-size: 1.4vh;
+}
 .way img{
 	width: 40vw;
 	height: 40%;
 	border-radius: 0 20px 20px 0;
 		flex:1 1 40%;
+}
+.content{
+	padding: 25px;
+}
+
+.logo , .empty, .icon{
+	display: none;
+}
+.mob-right{
+	margin-left: auto;
+}
+.mob-left{
+	margin-right: auto;
 }
 }
