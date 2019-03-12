@@ -7,7 +7,6 @@ body{
 header{
 		position: relative;
 		height: 10vh;
-		width: 100%;
 		 display:flex;
 	 	background-color: yellow;
 	 	justify-content: space-between;
@@ -93,7 +92,7 @@ a{
 	float: right;
 }
 	.way article{
-
+		padding-left: 10px;
 	display: flex;
 	box-shadow: 0 0 5px;
 	border-radius: 20px;
@@ -101,7 +100,8 @@ a{
 
 }
 header{
-		 padding: 25px;
+		height: 5vh;
+		padding:0 20px;
 }
 .navigation{
 	margin:auto;
