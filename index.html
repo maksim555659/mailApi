@@ -15,12 +15,11 @@
 	<script type="text/javascript">
 	mailru.loader.require('api', function(){
         mailru.connect.init('783362', '7220a61182dfa95a75746551733ed1f1');
-        try{
-            mailru.common.users.getInfo(function(result){console.log(result[0].uid)});
-        }catch(err){
-            console.log('Ошибка - '+ err);
-        }
+        console.log(mailru.session);
     });
+    console.log(mailru.session);
+    
+    // mailru.common.users.getInfo(function(result){console.log(result[0].uid)});
 
 	   </script>
 <!-- <script src = "script.js"></script> -->
