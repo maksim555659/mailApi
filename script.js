@@ -13,7 +13,11 @@ function login(){
         //   });
     });
 
-
+    mailru.events.listen(mailru.connect.events.login, function(session) {
+        // эта функция будет вызвана при логине
+        console.log(session.ext_perm); // показывает привилегии залогиненного пользователя
+      });
+      mailru.connect.login(['widget', 'photos']);
 
 
 
