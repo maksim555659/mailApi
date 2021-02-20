@@ -1,18 +1,23 @@
-let button = document.getElementById('auth');
+let authButton = document.getElementById('auth');
+let deAuthButton = document.getElementById('deAuth');
 
-button.onclick = login;
+authButton.onclick = login;
+deaAuthButton.onclick = leave;
 
 function login(){
     mailru.events.listen(mailru.connect.events.login, function(session) {
         // эта функция будет вызвана при логине
-        alert(session.ext_perm); // показывает привилегии залогиненного пользователя
+        console.log('session stuff', session.ext_perm); 
         mailru.connect.getLoginStatus(function(session){
-                 console.log('is auth',session.ext_perm); // показывает привилегии залогиненного пользователя
+                 console.log('is auth',session.ext_perm); 
                });
       });
       mailru.connect.login(['widget', 'photos']);
 }
 
+function leave(){
+    mailru.connect.logout();
+}
     mailru.loader.require('api', function(){
         mailru.connect.init('783362', '7220a61182dfa95a75746551733ed1f1');
         // mailru.common.users.getInfo(function(result) {
