@@ -19,8 +19,12 @@
             mailru.connect.init('783362', '7220a61182dfa95a75746551733ed1f1');
             console.log(mailru.session);
         });
+        asd();
     }
-    mailru.common.users.getInfo(function(result){console.log(result[0].uid)});
+    function asd(){
+        mailru.common.users.getInfo(function(result){console.log(result[0].uid)});
+
+    }
 	   </script>
 <!-- <script src = "script.js"></script> -->
 </body>
