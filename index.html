@@ -15,11 +15,9 @@
 	<script type="text/javascript">
 	mailru.loader.require('api', function(){
         mailru.connect.init('783362', '7220a61182dfa95a75746551733ed1f1');
+        mailru.common.users.getInfo(function(result){console.log(result[0].uid)});
     });
-			mailru.connect.initButton(); 
-		   
-			mailru.common.users.getInfo(function(result){console.log(result[0].uid)});
-		   
+
 	   </script>
 <!-- <script src = "script.js"></script> -->
 </body>
