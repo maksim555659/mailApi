@@ -2,7 +2,7 @@ let authButton = document.getElementById('auth');
 let deAuthButton = document.getElementById('deAuth');
 
 authButton.onclick = login;
-deaAuthButton.onclick = leave;
+deAuthButton.onclick = leave;
 
 function login(){
     mailru.events.listen(mailru.connect.events.login, function(session) {
