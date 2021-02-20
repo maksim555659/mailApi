@@ -2,6 +2,8 @@ var check = null;
 
 let button = document.getElementById('button');
 
+var user_list = [];
+
 button.onclick = function data(){
     mailru.loader.require('api', function(){
         mailru.connect.init('783362', '7220a61182dfa95a75746551733ed1f1');
