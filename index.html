@@ -5,12 +5,28 @@
     </script>
 </head>
 <body>
+	
     <div class = 'social'>
         <a class='mrc__connectButton' id = 'button'>Auth</a>
     </div>
     <form action="#">
         <input type="text" placeholder = 'email'>
     </form>
-<script src = "script.js"></script>
+	<script type="text/javascript">
+		//вход@mail.ru').appendTo('body');
+			// эта функция превращает только что вставленный элемент в 
+			// стандартную кнопку Mail.Ru
+			mailru.connect.initButton(); 
+		   } else {
+			// все ок, можно работать
+	 
+			// получаем полную информацию о текущем пользователе
+			mailru.common.users.getInfo(function(result){console.log(result[0].uid)});
+		   }
+		  });
+		 });
+		//]]>
+	   </script>
+<!-- <script src = "script.js"></script> -->
 </body>
 </html>
