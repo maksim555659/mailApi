@@ -1,29 +1,16 @@
 ﻿<html>
 <head>
     <meta charset="UTF-8">
+	<script type="text/javascript" src="https://connect.mail.ru/js/loader.js">
+    </script>
 </head>
 <body>
     <div class = 'social'>
-        <a class='mrc__connectButton'>Auth</a>
+        <a class='mrc__connectButton' id = 'button'>Auth</a>
     </div>
     <form action="#">
         <input type="text" placeholder = 'email'>
     </form>
-
-	<script type="text/javascript" src="https://connect.mail.ru/js/loader.js">
-    </script>
-
-	<script>
-	mailru.loader.require('api', function(){
-		mailru.connect.init('783362', '7220a61182dfa95a75746551733ed1f1');
-		mailru.common.users.getInfo(function(user_list) {
-			console.log(mailru.session);
-			alert(user_list[0].first_name); // выведет имя пользователя с uid 123
-		}, '123');
-	});
-
-	console.log('version 0.4');
-	</script>
-	
+<script src = "script.js"></script>
 </body>
 </html>
