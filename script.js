@@ -25,8 +25,4 @@ function leave(){
         //   });
     });
 
-    
-
-
-
 console.log('version 0.6');
