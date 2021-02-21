@@ -11,16 +11,11 @@ deAuthButton.onclick = leave;
 function login() {
     mailru.events.listen(mailru.connect.events.login, function (session) {
         // эта функция будет вызвана при логине
-        console.log('session stuff', session.ext_perm);
-        mailru.connect.getLoginStatus(function (session) {
-            console.log('is auth', session.ext_perm);
-        });
         if (mailru.session) {
             mailru.common.users.getInfo(function (result) {
                 console.log(result);
             });
         }
-
     });
     mailru.connect.login(['widget', 'photos']);
 }
