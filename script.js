@@ -23,5 +23,3 @@ function login() {
 function leave() {
     mailru.connect.logout();
 }
-
-console.log('version 0.6');
