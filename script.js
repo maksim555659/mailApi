@@ -15,7 +15,7 @@ function login() {
         if (mailru.session) {
             mailru.common.users.getInfo(function (resultData) {
                 result = resultData;
-                console.log(result);
+                console.log(result[0]);
             });
         }
     });
